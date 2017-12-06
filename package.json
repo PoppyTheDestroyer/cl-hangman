@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jmsaenz5/cl-hangman/issues"
   },
-  "homepage": "https://github.com/jmsaenz5/cl-hangman#readme"
+  "homepage": "https://github.com/jmsaenz5/cl-hangman#readme",
+  "dependencies": {
+    "inquirer": "^4.0.1"
+  }
 }

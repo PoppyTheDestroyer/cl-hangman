@@ -1,0 +1,10 @@
+var letter = require("./letter.js");
+
+var words = ["KISS MY SHINY METAL ASS", "KIF KROKER", "THE HEAD OF RICHARD NIXON", "ROBOT DEVIL", "CALCULON", "CLAMPS", "HEADLESS BODY OF AGNEW", "JURASSIC BARK", "SEYMORE", "BENDER BENDING RODRIGUEZ", "TURANGA LEELA", "PHILIP J FRY", "PROFESSOR FARNSWORTH", "AMY WONG", "DOCTOR ZOIDBERG", "PLANET EXPRESS", "NEW NEW YORK CITY", "ZAPP BRANNIGAN", "HERMES CONRAD", "NIBBLER", "GOOD NEWS EVERYONE", "SWEET ZOMBIE JESUS"];
+
+function wordToGuess(wordNew, letterArray) {
+    this.wordNew = wordNew;
+    this.letterArray = letterArray;
+}
+
+var 
