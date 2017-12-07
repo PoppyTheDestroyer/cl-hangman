@@ -25,3 +25,5 @@ function game() {
 }
 
 var newWord = new wordToGuess(randomName);
+
+newWord.init();

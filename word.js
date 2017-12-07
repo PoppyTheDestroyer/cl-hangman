@@ -6,7 +6,7 @@ function wordToGuess(nameToGuess) {
     this.guessedLetters = [];
     this.guessesWrong = 0;
     this.init = function() {
-        
+        var wordBreak = new letterBreak(nameToGuess);
     }
 }
 
