@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/jmsaenz5/cl-hangman#readme",
   "dependencies": {
-    "inquirer": "^4.0.1"
+    "futurama-names": "0.0.1-semantically-released",
+    "inquirer": "^4.0.1",
+    "simpsons-names": "^2.0.0"
   }
 }
