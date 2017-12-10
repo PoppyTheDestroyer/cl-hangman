@@ -1,4 +1,4 @@
-function letterBreak(wordDestroy) {
+letterBreak = function (wordDestroy) {
     this.wordDestroy = wordDestroy;
     this.lettersArray = function () {
         for (var i = 0, j = 0; i < wordDestroy.length; i++) {
@@ -14,4 +14,3 @@ function letterBreak(wordDestroy) {
     }
 }
 
-module.exports = letter;
