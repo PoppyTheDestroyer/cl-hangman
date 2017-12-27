@@ -3,8 +3,10 @@ var word = require("./word.js");
 var letter = require("./letter.js");
 var names = require("simpsons-names");
 
+var allNames = names.all;
 var randomName = names.random();
-var newWord = []
+var newWord = [];
+var wordbreak;
 //console.log(randomName.split([""]))
 /*inquirer.prompt([
     {
@@ -21,13 +23,9 @@ var newWord = []
     })
 */
 //Once the game is started, a word must be selected.
-function game() {
-
-}
+function game() {}
 
 var newWord = new wordToGuess(randomName);
-var wordBreak = new letterBreak(nameToGuess);
+var wordBreak = new letterBreak(newWord.letterArray);
 
-//console.log(newWord.letterArray)
-
-
+console.log(newWord.letterArray);
