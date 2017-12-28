@@ -19,6 +19,7 @@
   "dependencies": {
     "futurama-names": "0.0.1-semantically-released",
     "inquirer": "^4.0.1",
+    "is-letter": "^1.1.1",
     "simpsons-names": "^2.0.0"
   }
 }

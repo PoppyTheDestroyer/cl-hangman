@@ -3,7 +3,7 @@ letterBreak = function(letters) {
   this.letters = letters;
   this.showLetter = false;
   this.wordLetters = [];
-  this.lettersArray = function() {
+  /*this.lettersArray = function() {
     for (var i = 0, j = 0; i < letters.length; i++) {
       wordLetters[j] = letters.charAt(i);
       j += 1;
@@ -16,10 +16,19 @@ letterBreak = function(letters) {
       }
       j += 1;
       if (wordLetters[j] === false) {
-        return "_";
+        this.wordLetters.push("_");
       } else {
-        return " "
+        this.wordLetters.push(" ");
       }
     }
-  };
+  };*/
+  this.lettersArray = function(letters) {
+    for (var i = 0; i < this.letters.length; i +=1) {
+      if (this.letters.charAt(i) === " ") {
+        this.wordLetters.push(" ");
+      } else {
+        this.wordLetters.push("_");
+      }
+    }
+  }
 };

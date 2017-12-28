@@ -1,9 +1,10 @@
-var inquirer = require("inquirer");
-var word = require("./word.js");
-var letter = require("./letter.js");
-var names = require("simpsons-names");
+/*jshint esversion: 6 */
+const inquirer = require("inquirer");
+const word = require("./word.js");
+const letter = require("./letter.js");
+const names = require("simpsons-names");
+const isLetter = require("is-letter");
 
-var allNames = names.all;
 var randomName = names.random();
 var newWord = [];
 var wordbreak;
@@ -28,4 +29,8 @@ function game() {}
 var newWord = new wordToGuess(randomName);
 var wordBreak = new letterBreak(newWord.letterArray);
 
+/*for (i=0; i<wordBreak.length; i+=1) {
+    console.log(wordBreak.wordLetters[i]);
+}*/
 console.log(newWord.letterArray);
+console.log(wordBreak.lettersArray(newWord.letterArray));
