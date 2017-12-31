@@ -19,7 +19,12 @@ wordToGuess = function(nameToGuess) {
     var newLetter = new letterBreak(this.letterArray[i]);
     this.wordLetters.push(newLetter);
   }
+  
   this.wordDisplay = function() {
     var display = "";
+    this.wordLetters.forEach(function (ltr) {
+      var currentLetter = ltr.gameBlanks();
+      display += currentLetter;
+    });
   };
 };
